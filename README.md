@@ -51,12 +51,10 @@ C:
 ```powershell
 mkdir C:\consul\data
 mkdir C:\consul\config
+
 3️⃣ Create Configuration File
 Create: C:\consul\config\consul.hcl
 
-hcl
-Copy
-Edit
 datacenter = "dc1"
 data_dir   = "C:/consul/data"
 log_level  = "INFO"
@@ -71,27 +69,19 @@ client_addr = "0.0.0.0"
 For client agent mode, set server = false and remove bootstrap_expect.
 
 4️⃣ Run Once to Test Manually
-powershell
-Copy
-Edit
+
 C:\consul\consul.exe agent -config-dir="C:\consul\config"
 Open http://127.0.0.1:8500/ui to verify UI works.
 
 5️⃣ Install Consul as a Windows Service
 Run in Admin Command Prompt:
-
-cmd
-Copy
-Edit
 C:\nssm\nssm.exe install Consul
 In the NSSM GUI:
 
 Application Path:
 C:\consul\consul.exe
-
 Arguments:
 agent -config-dir="C:\consul\config"
-
 Startup Directory:
 C:\consul\
 
