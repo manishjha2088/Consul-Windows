@@ -10,7 +10,7 @@ Supports:
 - Web UI on `localhost:8500`
 - Auto-start on boot
 
----
+
 
 ## 🧰 Prerequisites
 
@@ -27,13 +27,9 @@ C:
 ├── consul.exe
 ├── config
 │ └── consul.hcl
-└── data\
+└── data
 
-yaml
-Copy
-Edit
 
----
 
 ## 🚀 Step-by-Step Setup
 
