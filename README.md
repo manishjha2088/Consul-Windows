@@ -128,5 +128,5 @@ For clusters, set bootstrap_expect = 3 and configure LAN gossip
 Use DNS forwarding if integrating with service discovery
 
 📂 About
-This repo is maintained by Manish Jha for experimenting with HashiCorp Consul on Windows using native tools and service integration.
+This repo is maintained by @manishjha2088 for experimenting with HashiCorp Consul on Windows using native tools and service integration.
 
